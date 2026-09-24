@@ -1,0 +1,142 @@
+{
+  "setup": {
+    "n_clients": 10,
+    "n_malicious": 2,
+    "malicious_ids": [
+      0,
+      1
+    ],
+    "n_rounds": 30,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "main_summary": {
+    "fedavg_no_attack": {
+      "label": "FedAvg, no attack (reference)",
+      "final_acc_mean": 0.8783333333333333,
+      "final_acc_std": 0.011027462911821781
+    },
+    "fedavg_sign_flip": {
+      "label": "FedAvg, under attack",
+      "final_acc_mean": 0.056666666666666664,
+      "final_acc_std": 0.03782676562344267
+    },
+    "coordinate_median_sign_flip": {
+      "label": "Coordinate-median, under attack",
+      "final_acc_mean": 0.8550000000000001,
+      "final_acc_std": 0.0200616334280753
+    },
+    "trimmed_mean_sign_flip": {
+      "label": "Trimmed-mean, under attack",
+      "final_acc_mean": 0.8538888888888888,
+      "final_acc_std": 0.0181386974636828
+    }
+  },
+  "label_flip_summary": {
+    "fedavg_label_flip": {
+      "label": "FedAvg, label-flip attack",
+      "final_acc_mean": 0.835,
+      "final_acc_std": 0.02702308112670067
+    },
+    "coordinate_median_label_flip": {
+      "label": "Coordinate-median, label-flip attack",
+      "final_acc_mean": 0.8661111111111112,
+      "final_acc_std": 0.018036314534164353
+    }
+  },
+  "main_per_seed_final": {
+    "fedavg_no_attack": [
+      {
+        "round": 29,
+        "accuracy": 0.8666666666666667
+      },
+      {
+        "round": 29,
+        "accuracy": 0.8972222222222223
+      },
+      {
+        "round": 29,
+        "accuracy": 0.875
+      },
+      {
+        "round": 29,
+        "accuracy": 0.8694444444444445
+      },
+      {
+        "round": 29,
+        "accuracy": 0.8833333333333333
+      }
+    ],
+    "fedavg_sign_flip": [
+      {
+        "round": 29,
+        "accuracy": 0.030555555555555555
+      },
+      {
+        "round": 29,
+        "accuracy": 0.04722222222222222
+      },
+      {
+        "round": 29,
+        "accuracy": 0.005555555555555556
+      },
+      {
+        "round": 29,
+        "accuracy": 0.09722222222222222
+      },
+      {
+        "round": 29,
+        "accuracy": 0.10277777777777777
+      }
+    ],
+    "coordinate_median_sign_flip": [
+      {
+        "round": 29,
+        "accuracy": 0.8305555555555556
+      },
+      {
+        "round": 29,
+        "accuracy": 0.8805555555555555
+      },
+      {
+        "round": 29,
+        "accuracy": 0.8527777777777777
+      },
+      {
+        "round": 29,
+        "accuracy": 0.8361111111111111
+      },
+      {
+        "round": 29,
+        "accuracy": 0.875
+      }
+    ],
+    "trimmed_mean_sign_flip": [
+      {
+        "round": 29,
+        "accuracy": 0.8277777777777777
+      },
+      {
+        "round": 29,
+        "accuracy": 0.8805555555555555
+      },
+      {
+        "round": 29,
+        "accuracy": 0.8555555555555555
+      },
+      {
+        "round": 29,
+        "accuracy": 0.8416666666666667
+      },
+      {
+        "round": 29,
+        "accuracy": 0.8638888888888889
+      }
+    ]
+  }
+}
